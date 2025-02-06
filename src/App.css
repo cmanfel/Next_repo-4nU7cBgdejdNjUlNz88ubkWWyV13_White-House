@@ -1,0 +1,673 @@
+:root {
+  --main-bg-color: #000;
+  --text-color: #fff;
+  --link-color: #61dafb;
+  --nav-bg-color: #333;
+  --nav-hover-bg-color: #575757;
+  --button-bg-color: #ff6600;
+  --button-hover-bg-color: #ff8533;
+  --content-bg-color: rgba(0, 0, 0, 0.5);
+  --default-text-color: #333;
+  --highlight-section-bg-color: #000;
+  --cards-list-bg-color: #333;
+  --overlay-bg-color: rgba(0, 0, 0, 0.5);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: var(--default-text-color);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 0;
+  flex: 0 0 10vh;
+}
+
+.App-link {
+  color: var(--link-color);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--nav-bg-color);
+  padding: 5px 0;
+  flex: 0 0 5vh;
+}
+
+.App-nav a {
+  color: var(--text-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.App-nav a:hover {
+  background-color: var(--nav-hover-bg-color);
+}
+
+.App-main, .overview-section {
+  flex: 1;
+  width: 100%;
+}
+
+.App-main {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-color);
+  text-align: center;
+  background-color: var(--content-bg-color);
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%; /* Ensures the text container spans the width of the image */
+  box-sizing: border-box; /* Includes padding in the element's total width */
+  font-size: 24px; /* Increase font size */
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: moveUp 0.5s forwards;
+}
+
+@keyframes moveUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.book-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.book-button:hover {
+  background-color: var(--button-hover-bg-color);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.App-footer {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 0;
+  flex: 0 0 5vh;
+}
+
+.highlight-section {
+  background-color: var(--highlight-section-bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.highlight-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.overview-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.overview-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.overview-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden; /* Prevent horizontal overflow */
+}
+
+.image-text, .image-text.reverse {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure it takes the full width of the container */
+  box-sizing: border-box;
+}
+
+.image-text {
+  flex-direction: row;
+}
+
+.image-text.reverse {
+  flex-direction: row-reverse;
+}
+
+.overview-image {
+  flex: 1; /* 3 parts of the total 4 parts */
+  width: 50%; /* Ensure the image takes 75% of the container width */
+  height: auto;
+  max-width: 100%; /* Ensure the image does not exceed its container */
+}
+
+.overview-description {
+  flex: 1; /* 1 part of the total 4 parts */
+  width: 50%; /* Ensure the text takes 25% of the container width */
+  padding: 20px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  background-color: var(--content-bg-color);
+  border-radius: 8px;
+}
+
+.counters-table table {
+  width: 100%;
+  background-color: var(--highlight-section-bg-color);
+  color: var(--text-color);
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.counters-table th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--text-color);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.treebeard {
+  background-color: var(--highlight-section-bg-color);
+  color: var(--text-color);
+}
+
+.treebeard .node {
+  padding: 10px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.treebeard .node:hover {
+  background-color: var(--nav-hover-bg-color);
+}
+
+.treebeard .node .toggle {
+  fill: var(--text-color);
+}
+
+.treebeard .node .name {
+  color: var(--text-color);
+}
+
+.amenities-tree {
+  background-color: var(--highlight-section-bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.amenities-tree .node {
+  padding: 10px !important;
+  border-bottom: 1px solid var(--text-color) !important;
+}
+
+.amenities-tree .node:hover {
+  background-color: var(--nav-hover-bg-color) !important;
+}
+
+.amenities-tree .node .toggle {
+  fill: var(--text-color) !important;
+}
+
+.amenities-tree .node .name {
+  color: var(--text-color) !important;
+}
+
+.amenities-tree .treebeard {
+  background-color: var(--highlight-section-bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.amenities-tree .treebeard .node {
+  padding: 10px !important;
+  border-bottom: 1px solid var(--text-color) !important;
+}
+
+.amenities-tree .treebeard .node:hover {
+  background-color: var(--nav-hover-bg-color) !important;
+}
+
+.amenities-tree .treebeard .node .toggle {
+  fill: var(--text-color) !important;
+}
+
+.amenities-tree .treebeard .node .name {
+  color: var(--text-color) !important;
+}
+
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--nav-hover-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nearby-places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.place-card {
+  background-color: var(--nav-hover-bg-color);
+  color: var(--text-color);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+}
+
+.nearby-places-tables {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the tables horizontally */
+}
+
+.category-table {
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the table takes full width of its container */
+  max-width: 800px; /* Optional: Set a max width for better control */
+}
+
+.category-table h3 {
+  margin-bottom: 10px;
+  color: var(--text-color);
+  text-align: center; /* Center the category title */
+}
+
+.category-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--highlight-section-bg-color);
+  color: var(--text-color);
+}
+
+.category-table th, .category-table td {
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  text-align: left;
+}
+
+.category-table th {
+  background-color: var(--nav-bg-color);
+}
+
+.category-table tr:hover {
+  background-color: var(--nav-hover-bg-color);
+}
+
+.nearby-categories-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.category-card {
+  width: 300px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.category-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-description {
+  margin-top: 8px;
+}
+
+.fullwidth-content-text {
+  position: absolute;
+  bottom: 0; /* Adjust as needed to align with the bottom of the photo */
+  left: 0;
+  width: 100vw;
+  padding: 10px;
+  background-color: var(--content-bg-color);
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+/* Global CSS */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* CardsList Styles */
+.custom-cards-list {
+    padding: 15px;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+.cards-list-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.custom-card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+}
+
+.custom-card-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.custom-card-container::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 4px;
+}
+
+.custom-list-card {
+    width: 120px;    /* Adjusted size */
+    height: 125px;   /* Fixed height to match image */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    flex-shrink: 0;  /* Prevent cards from shrinking */
+    position: relative;
+    background-color: #fff; /* Ensure a background color for text visibility */
+}
+
+.custom-list-card-image-container {
+    width: 100%;
+    height: 100%;   /* Use full height of the card */
+    overflow: hidden;
+    position: relative; /* Position relative to allow absolute positioning of title */
+}
+
+.custom-list-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-list-card-title-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* White text color for contrast */
+    text-align: center;
+    padding: 5px;
+}
+
+.custom-list-card-title {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* ------------------------ Global Reset - Remove Hidden Scrollbars ------------------------ */
+/* For Webkit browsers */
+*::-webkit-scrollbar {
+    display: initial !important;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: auto !important;
+}
+
+.gallery-card {
+    width: 100%; /* Use full width of the container */
+    margin: 10px 0; /* Add vertical margin for spacing */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--main-bg-color); /* Ensure a background color for text visibility */
+}
+
+.gallery-card h3 {
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align: left; /* Align text to the left */
+    margin: 10px 0; /* Add some margin for spacing */
+    font-weight: bold; /* Optional: make the text bold */
+    color: var(--text-color); /* Ensure it uses the text color variable */
+}
+
+.gallery-thumbnails {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 5px; /* Space between thumbnails */
+    padding: 10px; /* Add padding for better spacing */
+    scrollbar-width: thin; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.gallery-thumbnails::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar for Webkit browsers */
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb {
+    background-color: var(--text-color); /* Use the --text-color variable */
+    border-radius: 4px;
+}
+
+.gallery-thumbnails img {
+    width: 600px; /* Increased width for thumbnails */
+    height: 600px; /* Increased height for thumbnails */
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.gallery-thumbnails img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.thumbnail-container {
+    position: relative;
+    display: inline-block;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.overlay-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.overlay-description {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.lightbox-slide {
+    position: relative;
+}
+
+.lightbox-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.lightbox-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lightbox-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.lightbox-description {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}

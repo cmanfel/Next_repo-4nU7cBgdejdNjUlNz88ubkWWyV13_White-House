@@ -1,0 +1,41 @@
+{
+    "mainTitle": "Welcome to Our Place",
+    "slogan": "Your perfect getaway",
+    "mainPhotoUrl": "/images/main.jpg",
+    "overviewText": "This is a beautiful place to stay.",
+    "indoorText": "Cozy and comfortable indoor spaces.",
+    "outdoorText": "Enjoy the great outdoors.",
+    "amenitiesText": "All the amenities you need.",
+    "typeOfPlace": "Entire home",
+    "counters": { "bedrooms": 3, "beds": 4, "guests": 8, "bathrooms": 2 },
+    "treeData": {
+      "id": "root",
+      "name": "Full Amenities List",
+      "children": [
+        {
+          "id": "category-0",
+          "name": "Category 1",
+          "children": [
+            { "id": "amenity-0-0", "name": "Amenity 1" },
+            { "id": "amenity-0-1", "name": "Amenity 2" }
+          ]
+        }
+      ]
+    },
+    "indoorUrls": ["/images/indoor1.jpg", "/images/indoor2.jpg"],
+    "outdoorUrls": ["/images/outdoor1.jpg", "/images/outdoor2.jpg"],
+    "indoorPhotoMap": {
+      "Living Room": ["/images/indoor1.jpg"],
+      "Bedroom": ["/images/indoor2.jpg"]
+    },
+    "mapImageUrl": "/images/map.jpg",
+    "googleMapsUrl": "https://maps.google.com",
+    "nearbyCategories": [
+      {
+        "category": "Restaurant",
+        "icon_url": "/icons/restaurant.png",
+        "image_url": "/images/restaurant.jpg",
+        "description": "Great places to eat nearby."
+      }
+    ]
+  }
