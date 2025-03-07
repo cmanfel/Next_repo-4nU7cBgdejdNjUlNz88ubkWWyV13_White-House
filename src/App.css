@@ -18,7 +18,7 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: var(--text-color);
   color: var(--default-text-color);
 }
 
@@ -94,19 +94,32 @@ html, body {
 .App-main {
   background-color: var(--main-bg-color);
   color: var(--text-color);
-  padding: 20px;
+  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
+  height: calc(100vh - 15vh);
+  min-height: calc(100vh - 15vh);
+  width: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 800px; /* Adjust as needed */
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 100%; /* Ensure it takes full height of parent */
 }
 
 .main-image {
@@ -157,7 +170,7 @@ html, body {
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px var(--overlay-bg-color);
   transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -209,8 +222,9 @@ html, body {
 .overview-content {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center horizontally */
   width: 100%;
-  overflow: hidden; /* Prevent horizontal overflow */
+  overflow: hidden;
 }
 
 .image-text, .image-text.reverse {
@@ -349,7 +363,7 @@ html, body {
 .card {
   background-color: var(--nav-hover-bg-color);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--overlay-bg-color);
   padding: 16px;
   width: 100%;
   box-sizing: border-box;
@@ -367,7 +381,7 @@ html, body {
   color: var(--text-color);
   padding: 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--overlay-bg-color);
   transition: transform 0.3s;
 }
 
@@ -425,8 +439,8 @@ html, body {
   width: 300px;
   padding: 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: #fff;
+  box-shadow: 0 4px 8px var(--overlay-bg-color);
+  color: var(--text-color);
 }
 
 .card-header {
@@ -477,9 +491,12 @@ body {
     color: var(--text-color);
 }
 
-.cards-list-title {
-    text-align: left;
-    margin-bottom: 10px;
+.cards-list-title,
+.list-title,
+.cardsList-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .custom-card-container {
@@ -505,11 +522,11 @@ body {
     height: 125px;   /* Fixed height to match image */
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--overlay-bg-color);
     margin-right: 15px;
     flex-shrink: 0;  /* Prevent cards from shrinking */
     position: relative;
-    background-color: #fff; /* Ensure a background color for text visibility */
+    background-color: var(--text-color);
 }
 
 .custom-list-card-image-container {
@@ -530,8 +547,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: #fff; /* White text color for contrast */
+    background-color: var(--overlay-bg-color);
+    color: var(--text-color);
     text-align: center;
     padding: 5px;
 }
@@ -553,121 +570,615 @@ body {
 }
 
 .gallery-card {
-    width: 100%; /* Use full width of the container */
-    margin: 10px 0; /* Add vertical margin for spacing */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: var(--main-bg-color); /* Ensure a background color for text visibility */
+  width: 100%;
+  max-width: calc(100vw - 40px); /* Responsive to viewport width with some margin */
+  margin: 10px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--overlay-bg-color);
+  background-color: var(--nav-hover-bg-color);
 }
 
 .gallery-card h3 {
-    text-transform: uppercase; /* Transform text to uppercase */
-    text-align: left; /* Align text to the left */
-    margin: 10px 0; /* Add some margin for spacing */
-    font-weight: bold; /* Optional: make the text bold */
-    color: var(--text-color); /* Ensure it uses the text color variable */
+  text-transform: uppercase; /* Transform text to uppercase */
+  text-align: left; /* Align text to the left */
+  margin: 10px 0; /* Add some margin for spacing */
+  font-weight: bold; /* Optional: make the text bold */
+  color: var(--text-color); /* Ensure it uses the text color variable */
 }
 
 .gallery-thumbnails {
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    gap: 5px; /* Space between thumbnails */
-    padding: 10px; /* Add padding for better spacing */
-    scrollbar-width: thin; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to a new line */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 5px; /* Space between thumbnails */
+  padding: 10px; /* Add padding for better spacing */
+  scrollbar-width: thin; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
 .gallery-thumbnails::-webkit-scrollbar {
-    height: 8px; /* Height of the scrollbar for Webkit browsers */
+  height: 8px; /* Height of the scrollbar for Webkit browsers */
 }
 
 .gallery-thumbnails::-webkit-scrollbar-thumb {
-    background-color: var(--text-color); /* Use the --text-color variable */
-    border-radius: 4px;
+  background-color: var(--text-color);
+  border-radius: 4px;
 }
 
 .gallery-thumbnails img {
-    width: 600px; /* Increased width for thumbnails */
-    height: 600px; /* Increased height for thumbnails */
-    object-fit: cover;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.2s; /* Smooth transition for hover effect */
+  width: 600px; /* Increased width for thumbnails */
+  height: 600px; /* Increased height for thumbnails */
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s; /* Smooth transition for hover effect */
 }
 
 .gallery-thumbnails img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .thumbnail-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .thumbnail {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--overlay-bg-color);
+  color: var(--text-color);
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .overlay-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .overlay-description {
-    font-size: 14px;
-    margin: 5px 0 0 0;
+  font-size: 14px;
+  margin: 5px 0 0 0;
 }
 
 .lightbox-slide {
-    position: relative;
+  position: relative;
 }
 
 .lightbox-image {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .lightbox-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--overlay-bg-color);
+  color: var(--text-color);
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .lightbox-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .lightbox-description {
-    font-size: 14px;
-    margin: 5px 0 0 0;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+/* Property categories container */
+.property-categories-container {
+  position: absolute; /* Keep only this positioning property */
+  bottom: 60px; /* Position above the fullwidth-content-text */
+  left: 20px; /* Distance from left edge */
+  z-index: 10; /* Ensure it's above other elements */
+  width: auto;
+  max-width: 50%; /* Limit width to avoid overlapping with other elements */
+  padding: 10px; /* Add some padding around the cards */
+  border-radius: 8px; /* Match the overlay's border radius */
+}
+
+/* Category overlay */
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  opacity: 0.5; /* 25% opacity */
+  border-radius: 8px;
+  z-index: 1;
+  min-height: 100px; /* Ensure minimum height */
+  pointer-events: none; /* Allow clicks to pass through to elements below */
+}
+
+/* Ensure the cards are above the overlay */
+.property-categories-container .custom-cards-list {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  padding: 5px;
+}
+
+/* Ensure card container is visible */
+.property-categories-container .custom-card-container {
+  justify-content: flex-start;
+  position: relative; /* Ensure proper stacking context */
+  z-index: 3; /* Above the overlay */
+}
+
+.property-categories-container .custom-list-card {
+  width: 80px; /* Smaller size for badges */
+  height: 80px;
+  margin-right: 10px;
+}
+
+.property-categories-container .custom-list-card-title-overlay {
+  font-size: 12px;
+}
+
+/* Add badge styling for cards */
+.custom-list-card.badge-style {
+  border: 2px solid var(--text-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--overlay-bg-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-list-card.badge-style:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--overlay-bg-color);
+}
+
+/* Badge style specific title overlay */
+.custom-list-card.badge-style .custom-list-card-title-overlay {
+  background-color: var(--overlay-bg-color);
+}
+
+.custom-list-card.badge-style .custom-list-card-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+/* Property info table container */
+.property-info-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  max-width: 90%;
+}
+
+/* Property info table styling - fix visible borders */
+.property-info-table {
+  background-color: var(--overlay-bg-color);
+  color: var(--text-color);
+  border-collapse: separate; /* Use separate instead of collapse */
+  border-spacing: 0; /* Keep cells tight */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--overlay-bg-color);
+  width: auto;
+  border: 2px solid var(--text-color); /* Explicit thick border */
+}
+
+.property-info-table th {
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  border: none; /* No borders for individual cells */
+}
+
+/* Add media query for responsive design */
+@media (max-width: 768px) {
+  .property-info-table {
+    font-size: 12px;
+    border: 2px solid var(--text-color); /* Ensure border is visible on mobile too */
+  }
+  
+  .property-info-table th {
+    padding: 8px;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Add these CSS rules to center the GalleryCard */
+.centered-content {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+/* Update grid layout for gallery cards to maintain image ratio */
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--overlay-bg-color);
+  width: 100%;
+  margin: 0 auto;
+  aspect-ratio: 1/1; /* Square aspect ratio by default, but images will maintain original ratio inside */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Restore the original value for GalleryCard */
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Update CardsList grid items to maintain image ratio */
+.custom-grid-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--overlay-bg-color);
+  width: 100%;
+  margin: 0 auto;
+  aspect-ratio: 1/1; /* Square container */
+}
+
+.custom-card-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.custom-grid-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Changed from cover to contain to preserve aspect ratio */
+  display: block;
+  background-color: var(--main-bg-color); /* Background color for areas not covered by the image */
+}
+
+/* Remove fixed heights from media queries */
+@media (max-width: 768px) {
+  .gallery-grid, .custom-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  /* Remove the height property */
+  .grid-item, .custom-grid-card {
+    /* height: 150px; - removed */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid, .custom-cards-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  
+  /* Remove the height property */
+  .grid-item, .custom-grid-card {
+    /* height: 200px; - removed */
+  }
+}
+
+/* For cases with fewer items that don't fill the row */
+@media (min-width: 768px) {
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .grid-item {
+    flex: 0 0 auto; /* Don't grow or shrink */
+    width: calc(50% - 20px); /* Adjust based on cardsPerRow */
+    max-width: 500px; /* Prevent oversized items */
+    margin: 10px;
+  }
+}
+
+/* Only apply this if you have 1 or 2 cards to prevent them from being too wide */
+.gallery-grid.few-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-grid.few-items .grid-item {
+  width: auto;
+  max-width: 500px;
+  margin: 0 10px;
+}
+
+/* Add a media query to cap the maximum width on larger screens */
+@media (min-width: 1240px) {
+  .gallery-card {
+    max-width: 1200px; /* Cap the maximum width on larger screens */
+  }
+}
+
+/* Add these styles to your App.css file */
+
+/* Grid layout for CardsList */
+.custom-cards-grid {
+  display: grid;
+  /* Grid columns are set inline in the component */
+  gap: 5px; /* Reduced from 10px to 5px */
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.custom-grid-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--overlay-bg-color);
+  width: 100%;
+  margin: 0 auto;
+  aspect-ratio: 1/1; /* Square container */
+}
+
+.custom-grid-card:hover {
+  transform: scale(1.03);
+}
+
+.custom-card-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.custom-grid-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Changed from cover to contain to preserve aspect ratio */
+  display: block;
+  background-color: var(--main-bg-color); /* Background color for areas not covered by the image */
+}
+
+.custom-card-title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--overlay-bg-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.custom-card-title {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Badge style for grid cards */
+.custom-grid-card.badge-style {
+  border: 2px solid var(--text-color);
+  box-shadow: 0 2px 4px var(--overlay-bg-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.custom-grid-card.badge-style:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--overlay-bg-color);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .custom-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .custom-grid-card {
+    /* height: 150px; - removed */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-cards-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .custom-grid-card {
+    /* height: 200px; - removed */
+  }
+}
+
+/* Add these new styles to your App.css file */
+
+/* ONLY these specific CardsList styles should be added/modified */
+
+/* Container for centering the grid */
+.cards-grid-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Grid layout for CardsList */
+.custom-cards-grid {
+  display: grid;
+  /* Grid columns are set inline in the component */
+  gap: 5px; /* Reduced from 10px to 5px */
+  margin: 0 auto;
+  width: fit-content;
+}
+
+/* Card style to ensure consistent sizing */
+.custom-grid-card {
+  width: 150px;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--overlay-bg-color);
+  margin: 0;
+}
+
+/* Specifically target CardsList images */
+.custom-grid-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keep this for CardsList */
+}
+
+/* RESTORE GalleryCard image styling */
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Restore the original value for GalleryCard */
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments ONLY for CardsList */
+@media (max-width: 1200px) {
+  .custom-cards-grid {
+    grid-template-columns: repeat(4, 150px);
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-cards-grid {
+    grid-template-columns: repeat(3, 150px);
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-cards-grid {
+    grid-template-columns: repeat(2, 150px);
+  }
+}
+
+@media (max-width: 380px) {
+  .custom-cards-grid {
+    grid-template-columns: repeat(1, 150px);
+  }
+}
+
+/* Remove all margins, padding and positioning from MainContent and CardsList */
+.main-content,
+#main-content,
+.main-content > *,
+.cards-grid-container,
+.custom-cards-grid {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  left: 0 !important;
+  transform: translateX(0) !important;
+  position: relative !important;
+}
+
+/* Reset the layout completely */
+.cards-grid-container {
+  display: block !important;
+  width: 100% !important;
+}
+
+/* Center the grid with margins */
+.custom-cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(6, 150px) !important;
+  gap: 5px !important;
+  margin: 0 auto !important;
+  width: fit-content !important;
+}
+
+/* CardsList styles with dynamic sizing */
+.cards-grid-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-cards-grid {
+  display: grid;
+  /* Grid columns are set inline in the component */
+  gap: 5px; /* Reduced from 10px to 5px */
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.custom-grid-card {
+  width: 150px;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--overlay-bg-color);
+  margin: 0;
+}
+
+.custom-grid-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cards-list-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Center title in CardsList cards */
+.custom-grid-card h3,
+.custom-grid-card h4,
+.custom-grid-card .card-title {
+  text-align: center;
+  width: 100%;
+  margin: 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
