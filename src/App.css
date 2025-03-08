@@ -926,21 +926,23 @@ body {
   }
 }
 
-/* Add these styles to your App.css file */
+/* Update these existing styles (not adding new ones) */
 
-/* Grid layout for CardsList */
+/* Change from grid to flexbox like GalleryCard */
 .custom-cards-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 5px;
-  width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
-  grid-template-columns: repeat(6, 1fr); /* Default 6 cards per row */
+  width: 100%; /* Changed from fit-content to 100% */
 }
 
-/* Change card width from fixed pixel to relative */
+/* Update card to use percentage width instead of fixed pixels */
 .custom-grid-card {
-  width: 100%; /* Changed from 150px to 100% */
+  flex: 0 0 auto; /* Add flex properties */
+  width: calc(16.666% - 5px); /* Default: 6 cards per row (similar to Gallery) */
+  max-width: 200px; /* Add max-width cap */
   aspect-ratio: 1/1;
   position: relative;
   overflow: hidden;
@@ -949,65 +951,34 @@ body {
   margin: 0;
 }
 
-.custom-grid-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* Update media queries to use the same approach as GalleryCard */
+/* Update existing media queries to use percentage widths */
 @media (max-width: 1200px) {
-  .custom-cards-grid {
-    grid-template-columns: repeat(4, 1fr);
+  .custom-grid-card {
+    width: calc(25% - 5px); /* 4 cards per row */
   }
 }
 
 @media (max-width: 992px) {
-  .custom-cards-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .custom-grid-card {
+    width: calc(33.333% - 5px); /* 3 cards per row */
   }
 }
 
 @media (max-width: 768px) {
-  .custom-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .custom-grid-card {
+    width: calc(50% - 5px); /* 2 cards per row */
   }
 }
 
 @media (max-width: 480px) {
-  .custom-cards-grid {
-    grid-template-columns: repeat(1, 1fr);
+  .custom-grid-card {
+    width: calc(100% - 5px); /* 1 card per row */
   }
 }
 
-/* ADD these new rules for data attribute support */
-.custom-cards-grid[data-max-cards-per-row="5"] {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.custom-cards-grid[data-max-cards-per-row="4"] {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.custom-cards-grid[data-max-cards-per-row="3"] {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.custom-cards-grid[data-max-cards-per-row="2"] {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.custom-cards-grid[data-max-cards-per-row="1"] {
-  grid-template-columns: repeat(1, 1fr);
-}
-
-/* Card styling */
-.custom-grid-card {
-  width: 100%;
-  aspect-ratio: 1/1;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px var(--overlay-bg-color);
-  margin: 0;
+/* Add this one new class for few items case */
+.custom-cards-grid.few-items .custom-grid-card {
+  width: auto;
+  max-width: 250px;
+  margin: 0 5px;
 }
