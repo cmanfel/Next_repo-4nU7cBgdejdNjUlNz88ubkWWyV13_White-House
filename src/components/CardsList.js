@@ -10,9 +10,6 @@ const CardsList = ({ cards = [], badges = true, badgeStyle, listTitle, cardsPerR
   useEffect(() => {
     console.log(`CardsList for category "${listTitle}" received cards:`, cards);
   }, [cards, listTitle]);
-
-  const gapSize = 5;
-  const maxGridWidth = `${cardsPerRow * 150 + (cardsPerRow - 1) * gapSize}px`;
   
   // Check if this is being used in property-categories-container (MainContent)
   const isPropertyCategory = badgeStyle === true && !listTitle;
@@ -39,15 +36,11 @@ const CardsList = ({ cards = [], badges = true, badgeStyle, listTitle, cardsPerR
           ))}
         </div>
       ) : (
-        // For regular card lists (like in AmenitiesPage), use the grid layout
+        // For regular card lists, use responsive grid layout similar to GalleryCard
         <div className="cards-grid-container">
           <div 
-            className="custom-cards-grid" 
-            style={{ 
-              gridTemplateColumns: `repeat(${cardsPerRow}, 150px)`,
-              gap: `${gapSize}px`,
-              maxWidth: maxGridWidth
-            }}
+            className="custom-cards-grid"
+            data-max-cards-per-row={cardsPerRow} // Store max cards per row as data attribute
           >
             {Array.isArray(cards) && cards.map((card, index) => (
               <ListCard
