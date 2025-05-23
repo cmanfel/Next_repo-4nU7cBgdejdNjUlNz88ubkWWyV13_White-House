@@ -1,1 +1,167 @@
-{"address":"2800 Northeast 16th Avenue, Wilton Manors, FL, USA","geoCode":{"lat":26.1625044,"lng":-80.1262402},"mapImageUrl":"https://storage.googleapis.com/hostrapp_public/BlmK2BhX1kM1icOUMWzXYR8wQUO2/villa/map.png","googleMapsUrl":"","nearbyCategories":[{"category":"Dining","place_type":"restaurant","description":"Wilton Manors offers a diverse culinary scene within walking distance. Enjoy upscale French cuisine at La Crepe Bistro (0.4 miles), savor authentic Italian flavors at Louie Bossi Ristorante (0.6 miles), or indulge in modern American fare at The Blue Moon (0.7 miles).","notable_places":["La Crepe Bistro","Louie Bossi Ristorante","The Blue Moon"],"image_prompt":"A photorealistic image of a charming outdoor patio at a restaurant in Wilton Manors, Florida, with fairy lights and lush greenery.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-mM4P98I7mgukdQjy7vvn6CS1.png?st=2025-02-02T18%3A26%3A35Z&se=2025-02-02T20%3A26%3A35Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A42%3A45Z&ske=2025-02-03T00%3A42%3A45Z&sks=b&skv=2024-08-04&sig=bEYHV/fTy3zM2AYOxViwoJmISXkf3eZ6NPaeJzMx6Wg%3D"},{"category":"Coffee","place_type":"cafe","description":"Start your day with a caffeine fix from local cafes like The Grind (0.3 miles), offering specialty coffee and pastries, or Crema Coffee & Tea (0.5 miles), known for its cozy atmosphere and unique blends.","notable_places":["The Grind","Crema Coffee & Tea"],"image_prompt":"A photorealistic image of a modern cafe in Wilton Manors, Florida, with exposed brick walls, comfortable seating, and a variety of coffee drinks on display.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-TOJQld49ZcUwttrLtPG6nCfZ.png?st=2025-02-02T18%3A26%3A47Z&se=2025-02-02T20%3A26%3A47Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A43%3A14Z&ske=2025-02-03T00%3A43%3A14Z&sks=b&skv=2024-08-04&sig=GAUF5PbNtruDgT5etgTSkbPPB%2Bbd2h9QsjaDV/zzslQ%3D"},{"category":"Attractions","place_type":"tourist_attraction","description":"Immerse yourself in the vibrant culture of Wilton Manors. Explore the Stonewall National Museum & Archives (0.8 miles), dedicated to LGBTQ+ history, or visit the scenic Colohatchee Park (0.9 miles), perfect for picnics and nature walks.","notable_places":["Stonewall National Museum & Archives","Colohatchee Park"],"image_prompt":"A photorealistic image of the Stonewall National Museum & Archives in Wilton Manors, Florida, with a rainbow flag prominently displayed.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-h9b3bKpQl7RXi0tJOUq8Hwoo.png?st=2025-02-02T18%3A27%3A05Z&se=2025-02-02T20%3A27%3A05Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A34%3A35Z&ske=2025-02-03T00%3A34%3A35Z&sks=b&skv=2024-08-04&sig=fGWOsgn9tFwOAnO/weVHPYoQWvk4jdaf90OZGgbGFsY%3D"},{"category":"Activities","place_type":"amusement_park","description":"Embark on thrilling adventures at Xtreme Action Park (1.1 miles), featuring go-karts, mini-golf, and laser tag. For a unique experience, visit the Escape Room Fort Lauderdale (1.2 miles) and test your problem-solving skills.","notable_places":["Xtreme Action Park","Escape Room Fort Lauderdale"],"image_prompt":"A photorealistic image of a group of people having fun at Xtreme Action Park in Wilton Manors, Florida, riding go-karts and playing mini-golf.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-UUfxW5YsMcTk8zJiPMS4tDdP.png?st=2025-02-02T18%3A27%3A19Z&se=2025-02-02T20%3A27%3A19Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A30%3A27Z&ske=2025-02-03T00%3A30%3A27Z&sks=b&skv=2024-08-04&sig=QPgutjqTO68yzW8mhi46xnRI3gNEmDunCtterRuv5i0%3D"},{"category":"Recreational","place_type":"park","description":"Relax and rejuvenate at Hugh Taylor Birch State Park (1.3 miles), offering stunning natural landscapes, hiking trails, and kayaking opportunities. For a more urban experience, visit Wilton Manors' Village Green (0.5 miles), ideal for leisurely strolls and people-watching.","notable_places":["Hugh Taylor Birch State Park","Wilton Manors' Village Green"],"image_prompt":"A photorealistic image of a couple enjoying a picnic at Hugh Taylor Birch State Park in Wilton Manors, Florida, with a view of the Intracoastal Waterway.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-PzVi25nJWGJcsXXRVp9s91wD.png?st=2025-02-02T18%3A27%3A33Z&se=2025-02-02T20%3A27%3A33Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T01%3A02%3A47Z&ske=2025-02-03T01%3A02%3A47Z&sks=b&skv=2024-08-04&sig=HHMPyAhgmbL/c4YfvloVn9pOOe8kHaxodstiWtdo7EY%3D"},{"category":"Shopping","place_type":"shopping_mall","description":"Treat yourself to a shopping spree at The Galleria at Fort Lauderdale (1.5 miles), a renowned mall with high-end boutiques and department stores. For unique finds and local crafts, explore the Wilton Manors Antique Market (0.7 miles).","notable_places":["The Galleria at Fort Lauderdale","Wilton Manors Antique Market"],"image_prompt":"A photorealistic image of the interior of The Galleria at Fort Lauderdale, Florida, showcasing luxury brands and a stylish atmosphere.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-8yCN5E2jmvVUjIQWk2DOXn6z.png?st=2025-02-02T18%3A27%3A44Z&se=2025-02-02T20%3A27%3A44Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A31%3A06Z&ske=2025-02-03T00%3A31%3A06Z&sks=b&skv=2024-08-04&sig=dhAKeQm8m1iYIeVLOhpSOf%2BiERkokPGThzeE%2BjsEc98%3D"},{"category":"Convenience","place_type":"grocery_or_supermarket","description":"Stock up on essentials and groceries at Publix Super Market (0.4 miles), conveniently located within walking distance. For a wider selection, visit Whole Foods Market (1.0 miles).","notable_places":["Publix Super Market","Whole Foods Market"],"image_prompt":"A photorealistic image of a well-stocked grocery store in Wilton Manors, Florida, with fresh produce, a variety of packaged goods, and friendly staff.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-e23q54e5awvaWgzct2Gjk6xk.png?st=2025-02-02T18%3A27%3A57Z&se=2025-02-02T20%3A27%3A57Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A42%3A08Z&ske=2025-02-03T00%3A42%3A08Z&sks=b&skv=2024-08-04&sig=BxHUSvf%2Balv43y2PVGZaKTktqeyveY/uaeylUMMaOfM%3D"},{"category":"Transportation Hubs","place_type":"airport","description":"Fort Lauderdale-Hollywood International Airport (FLL) is situated approximately 8 miles away, offering convenient domestic and international flights. For train services, the nearest station is Fort Lauderdale Amtrak Station (11 miles away).","notable_places":["Fort Lauderdale-Hollywood International Airport (FLL)","Fort Lauderdale Amtrak Station"],"image_prompt":"A photorealistic image of the Fort Lauderdale-Hollywood International Airport (FLL) terminal, with airplanes taking off and landing.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-1wQyiRMfKUokZgvuloOE6ulR.png?st=2025-02-02T18%3A28%3A12Z&se=2025-02-02T20%3A28%3A12Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A26%3A48Z&ske=2025-02-03T00%3A26%3A48Z&sks=b&skv=2024-08-04&sig=34t3/jPW8jdjuU0LifrfMTRvv2vC6gcSBYcof2Sg9pc%3D"},{"category":"Other Services","place_type":"spa","description":"Indulge in pampering treatments at The Spa at The Westin Fort Lauderdale (1.4 miles), offering a range of massages, facials, and body treatments. For a more holistic approach, visit The Yoga Studio of Wilton Manors (0.6 miles), providing yoga classes and meditation sessions.","notable_places":["The Spa at The Westin Fort Lauderdale","The Yoga Studio of Wilton Manors"],"image_prompt":"A photorealistic image of a luxurious spa treatment room at The Spa at The Westin Fort Lauderdale, Florida, with candles, soft lighting, and a serene atmosphere.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-RL7aE2eEJuwXgc3d04ALH1fu.png?st=2025-02-02T18%3A28%3A26Z&se=2025-02-02T20%3A28%3A26Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A41%3A45Z&ske=2025-02-03T00%3A41%3A45Z&sks=b&skv=2024-08-04&sig=jXKbRvgbEubhZWfp72NQR%2BWVoImo8RFkOkKzdcfWqUM%3D"}]}
+{
+  "address": "1600 Pennsylvania Avenue Northwest, Washington, D.C. 20500, USA",
+  "geoCode": {
+    "lat": 38.8976413,
+    "lng": -77.0366102
+  },
+  "mapImageUrl": "https://storage.googleapis.com/hostrapp_public/4nU7cBgdejdNjUlNz88ubkWWyV13/White House/map.png",
+  "googleMapsUrl": "",
+  "nearbyCategories": [
+    {
+      "category": "Dining",
+      "place_type": "restaurant",
+      "description": "Enjoy a diverse culinary scene within a short walk. From upscale dining to casual eateries, options abound. Average walking distance: 5-15 minutes. Examples include The Old Ebbitt Grill, a historic landmark, and Rasika, known for its modern Indian cuisine.",
+      "notable_places": [
+        "The Old Ebbitt Grill",
+        "Rasika",
+        "Central Michel Richard"
+      ],
+      "image_prompt": "A beautifully plated dish at a high-end restaurant with the U.S. Capitol building visible in the background through the window; warm lighting, elegant setting.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-HV8bZIOMPfhOF5CDBgozVZYj.png?st=2025-03-08T18%3A15%3A36Z&se=2025-03-08T20%3A15%3A36Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A24%3A11Z&ske=2025-03-08T22%3A24%3A11Z&sks=b&skv=2024-08-04&sig=BMGVNT0zO2Vl5RuFX9g6VyCZL/ZZLyp7EEBSxdkTnPw%3D"
+    },
+    {
+      "category": "Coffee",
+      "place_type": "cafe",
+      "description": "Start your day with a caffeine fix at one of the many nearby cafes. Perfect for a quick pick-me-up or a relaxing break. Average walking distance: 2-10 minutes. Stop by a Starbucks or local spot such as Bluestone Lane.",
+      "notable_places": [
+        "Starbucks",
+        "Bluestone Lane",
+        "Compass Coffee"
+      ],
+      "image_prompt": "A bustling cafe scene with people enjoying coffee and pastries; sunlight streaming through the windows, baristas at work, and a view of Pennsylvania Avenue outside.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-DEnuVjHEdRRgOmK5KPcARmo0.png?st=2025-03-08T18%3A15%3A48Z&se=2025-03-08T20%3A15%3A48Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A34%3A34Z&ske=2025-03-08T22%3A34%3A34Z&sks=b&skv=2024-08-04&sig=fU4D9gECG5eCa27AItXx4FptltUetoTqIcTTrc24AGA%3D"
+    },
+    {
+      "category": "Attractions",
+      "place_type": "tourist_attraction",
+      "description": "Immerse yourself in history and culture with world-renowned monuments, museums, and landmarks just steps away. Average walking distance: 5-20 minutes. Explore the White House, the National Mall, or the Smithsonian museums.",
+      "notable_places": [
+        "The White House",
+        "National Mall",
+        "Smithsonian National Museum of Natural History"
+      ],
+      "image_prompt": "A panoramic view of the National Mall with the Washington Monument and the U.S. Capitol Building in the background; clear blue sky, lush green lawns, and tourists strolling around.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-HJLFhsN8BXLyNEd1i3j4fQyG.png?st=2025-03-08T18%3A16%3A01Z&se=2025-03-08T20%3A16%3A01Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A03%3A16Z&ske=2025-03-08T22%3A03%3A16Z&sks=b&skv=2024-08-04&sig=6fO6KbiXXei0A/MSbSELmWVho2O7QynMuhKzetcr2KY%3D"
+    },
+    {
+      "category": "Activities",
+      "place_type": "park",
+      "description": "Engage in various activities from guided tours to leisurely strolls in the park. Perfect for all ages and interests. Average walking distance: 5-25 minutes. Take a Segway tour, visit the Tidal Basin, or explore the National Gallery of Art.",
+      "notable_places": [
+        "Tidal Basin",
+        "National Gallery of Art",
+        "Ford's Theatre"
+      ],
+      "image_prompt": "People enjoying outdoor activities such as kayaking on the Tidal Basin, cycling, and picnicking; cherry blossoms in full bloom, sunny weather.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-qSCCOjqyAclVUcs3Q1QJWVQg.png?st=2025-03-08T18%3A16%3A15Z&se=2025-03-08T20%3A16%3A15Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A01%3A32Z&ske=2025-03-08T22%3A01%3A32Z&sks=b&skv=2024-08-04&sig=AMh3kfUuESV4SA6fE3cJkrGWs2VQsOEFlRbbP0G4lqA%3D"
+    },
+    {
+      "category": "Recreational",
+      "place_type": "park",
+      "description": "Find numerous parks and green spaces for relaxation and recreation. Average walking distance: 5-15 minutes. Enjoy a picnic in Lafayette Square or a scenic walk along the National Mall.",
+      "notable_places": [
+        "Lafayette Square",
+        "The Ellipse",
+        "Constitution Gardens"
+      ],
+      "image_prompt": "A serene park scene with people relaxing on benches, reading books, and enjoying the scenery; lush greenery, mature trees, and a peaceful atmosphere.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-2raqBNAvt9nfvGxc7xIe1hzH.png?st=2025-03-08T18%3A16%3A29Z&se=2025-03-08T20%3A16%3A29Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A09%3A56Z&ske=2025-03-08T22%3A09%3A56Z&sks=b&skv=2024-08-04&sig=%2BhbbVRkvEmXAaiykbPv89OJEy7C1LRVL%2BbWljvwd0qI%3D"
+    },
+    {
+      "category": "Shopping",
+      "place_type": "shopping_mall",
+      "description": "Discover a variety of shopping options from luxury boutiques to souvenir shops. Average walking distance: 10-25 minutes. Explore CityCenterDC or Penn Quarter for unique finds.",
+      "notable_places": [
+        "CityCenterDC",
+        "Penn Quarter",
+        "National Place"
+      ],
+      "image_prompt": "A vibrant shopping district with upscale boutiques, department stores, and shoppers browsing; colorful storefronts, fashionable displays, and a lively atmosphere.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-8A51DCDuJYsniEMUPdRVqbpw.png?st=2025-03-08T18%3A16%3A42Z&se=2025-03-08T20%3A16%3A42Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A01%3A31Z&ske=2025-03-08T22%3A01%3A31Z&sks=b&skv=2024-08-04&sig=9vrdyQW9SW%2Bz/eVAMto4ZAVZ0nuDDzQZ7RxLL2UY1Yw%3D"
+    },
+    {
+      "category": "Convenience",
+      "place_type": "convenience_store",
+      "description": "Easily access everyday essentials with numerous convenience stores and pharmacies nearby. Average walking distance: 2-5 minutes. CVS and Walgreens are easily accessible.",
+      "notable_places": [
+        "CVS",
+        "Walgreens",
+        "7-Eleven"
+      ],
+      "image_prompt": "A well-stocked convenience store with bright lighting, various products on display, and friendly staff assisting customers.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-BJ5VZXOP9yXZZo5CmWpUsk70.png?st=2025-03-08T18%3A16%3A55Z&se=2025-03-08T20%3A16%3A55Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A11%3A53Z&ske=2025-03-08T22%3A11%3A53Z&sks=b&skv=2024-08-04&sig=TnNzpjkeEwdGUKHtySbhg8o4PXL3NSEv6BJcHknxA0I%3D"
+    },
+    {
+      "category": "Transportation Hubs - Air",
+      "place_type": "airport",
+      "description": "Convenient access to major airports for easy travel in and out of the city. Ronald Reagan Washington National Airport (DCA) is the closest airport. Average travel time by car: 15-25 minutes.",
+      "notable_places": [
+        "Ronald Reagan Washington National Airport (DCA)",
+        "Washington Dulles International Airport (IAD)",
+        "Baltimore/Washington International Thurgood Marshall Airport (BWI)"
+      ],
+      "image_prompt": "An aerial view of Ronald Reagan Washington National Airport (DCA) with planes taking off and landing; the Potomac River and the Washington D.C. skyline in the background.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-9s0eYKuyqo1RkTJTGEodTmQX.png?st=2025-03-08T18%3A17%3A06Z&se=2025-03-08T20%3A17%3A06Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A07%3A19Z&ske=2025-03-08T22%3A07%3A19Z&sks=b&skv=2024-08-04&sig=lTCmYksmykYoOQp/yc5wD0tVYw870u/VE4fSq%2BvW3CE%3D"
+    },
+    {
+      "category": "Transportation Hubs - Train",
+      "place_type": "train_station",
+      "description": "Union Station is a major transportation hub for Amtrak and regional train services. Average travel time by car or Metro: 10-15 minutes.",
+      "notable_places": [
+        "Union Station",
+        "Metro Center Station",
+        "Gallery Place-Chinatown Metro Station"
+      ],
+      "image_prompt": "The grand interior of Union Station with its soaring ceilings, marble floors, and bustling crowds; trains arriving and departing, and people waiting on platforms.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-0paq89VB6CDBjWKgMmnaAWcb.png?st=2025-03-08T18%3A17%3A19Z&se=2025-03-08T20%3A17%3A19Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A08%3A12Z&ske=2025-03-08T22%3A08%3A12Z&sks=b&skv=2024-08-04&sig=M2HcKIE1CUrdKF68uTrsGWyJGjiK41EBp01rdPDnZqM%3D"
+    },
+    {
+      "category": "Transportation Hubs - Bus",
+      "place_type": "bus_station",
+      "description": "Several bus stations and stops provide convenient access to local and regional bus services. Average walking distance to nearest stop: 2-5 minutes. Union Station also serves as a bus terminal.",
+      "notable_places": [
+        "Union Station Bus Terminal",
+        "Gallery Place Chinatown",
+        "Metro Center"
+      ],
+      "image_prompt": "A busy bus terminal with buses arriving and departing, passengers boarding and disembarking, and digital displays showing schedules.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-SEqLfFT4JF270mV8JAhUvtyq.png?st=2025-03-08T18%3A17%3A33Z&se=2025-03-08T20%3A17%3A33Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A00%3A51Z&ske=2025-03-08T22%3A00%3A51Z&sks=b&skv=2024-08-04&sig=6qrbaVlKzlbaslXD7hzk6nakdz%2BUcAJLx%2BmMd6Z2v/s%3D"
+    },
+    {
+      "category": "Transportation Hubs - Car",
+      "place_type": "parking",
+      "description": "Various parking garages and ride-sharing services offer convenient transportation options. Average walking distance to a parking garage: 5-10 minutes. Street parking available, but limited.",
+      "notable_places": [
+        "Parking Management Inc.",
+        "SP+ Parking",
+        "Impark"
+      ],
+      "image_prompt": "A modern parking garage with cars parked neatly in rows, well-lit interiors, and clear signage.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-jgXNItqsor8lrfVfcBcM8IFt.png?st=2025-03-08T18%3A17%3A44Z&se=2025-03-08T20%3A17%3A44Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T21%3A56%3A37Z&ske=2025-03-08T21%3A56%3A37Z&sks=b&skv=2024-08-04&sig=hqCUOaFULW2SRO9vByRf1wycOvr/m0i2ZJbqu1jUxhE%3D"
+    },
+    {
+      "category": "Other Services",
+      "place_type": "dry_cleaning",
+      "description": "Essential services such as dry cleaning, laundry, and postal services are easily accessible. Average walking distance: 5-15 minutes. Several dry cleaners and postal offices are located nearby.",
+      "notable_places": [
+        "Dupont Cleaners",
+        "US Post Office",
+        "DS Cleaners"
+      ],
+      "image_prompt": "A dry cleaning shop with clothes hanging on racks, a counter with staff assisting customers, and a sign indicating laundry services.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-fXLQ2Lh9nvUSZKBV54jPZkXb.png?st=2025-03-08T18%3A17%3A56Z&se=2025-03-08T20%3A17%3A56Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A23%3A46Z&ske=2025-03-08T22%3A23%3A46Z&sks=b&skv=2024-08-04&sig=rK/BMF0e08aecfCaAZt3PO9/FILtpRjp6SqGaUX/Mp4%3D"
+    },
+    {
+      "category": "Medical Services",
+      "place_type": "hospital",
+      "description": "Access to medical facilities and pharmacies ensures peace of mind during your vacation. Average travel time: 10-20 minutes. George Washington University Hospital is nearby.",
+      "notable_places": [
+        "The George Washington University Hospital",
+        "MedStar Georgetown University Hospital",
+        "Sibley Memorial Hospital"
+      ],
+      "image_prompt": "The exterior of a modern hospital building with an ambulance parked in front, a helipad on the roof, and medical staff entering and exiting.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-S3j4hSeoUzOXJ0zRlfNTrzAf.png?st=2025-03-08T18%3A18%3A11Z&se=2025-03-08T20%3A18%3A11Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-07T22%3A24%3A32Z&ske=2025-03-08T22%3A24%3A32Z&sks=b&skv=2024-08-04&sig=56FA2fB0ryfzbJ4j%2B0hCt4eVZnN6aBaW0%2B/YVCfP4Pg%3D"
+    }
+  ]
+}

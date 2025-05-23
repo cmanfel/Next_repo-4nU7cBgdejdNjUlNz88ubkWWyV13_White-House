@@ -1,1 +1,153 @@
-{"id":"villa","uid":"BlmK2BhX1kM1icOUMWzXYR8wQUO2","amentiesCategories":{"Services":["Luggage dropoff allowed","Long term stays allowed","Cleaning available during stay"],"Office amenities":["Wifi","Dedicated workspace"],"Heating and cooling amenities":["Heating","Ceiling fan","Air conditioning"],"Outdoor amenities":["Backyard","Outdoor furniture","Sun loungers","Patio or balcony","Beach essentials","BBQ grill"],"Kitchen amenities":["Blender","Freezer","Baking sheet","Barbecue utensils","Coffee","Coffee maker","Cooking basics","Hot water kettle","Dishwasher","Dishes and silverware","Dining table","Kitchen","Toaster","Stove","Refrigerator","Oven","Microwave","Wine glasses"],"Entertainment amenities":["TV"],"Family amenities":["Pack and play/Travel crib"],"Bedroom and laundry amenities":["Dryer","Clothing storage","Bed linens","Drying rack for clothing","Essentials","Hangers","Washer","Safe","Room-darkening shades","Mosquito net","Iron"],"Bathroom amenities":["Bathtub","Body soap","Hair dryer","Hot water","Hair conditioner","Cleaning products","Shower gel","Shampoo"],"Basic amenities":["Essentials","Dryer","Air conditioning","Heating","Hot water","Kitchen","TV","Wifi","Washer"],"Property category":["Tropical","Beach","Luxe","Design","Historical homes"],"Location amenities":["Laundromat nearby","Private entrance"],"Safety amenities":["First aid kit","Fire extinguisher","Carbon monoxide alarm","Smoke alarm"],"Parking and facilities":["Free parking on premises","Free street parking","Hot tub","Pool","Private living room","Single level home"]},"propertyType":"Entire Place","propertyCategories":[],"address":"2800 Northeast 16th Avenue, Wilton Manors, FL, USA","counters":{"beds":5,"guests":8,"bedrooms":3,"bathrooms":3},"createdAt":"2025-01-22T21:40:54.232Z","updatedAt":"2025-02-03T03:00:17.694Z"}
+{
+  "id": "White House",
+  "uid": "4nU7cBgdejdNjUlNz88ubkWWyV13",
+  "amentiesCategories": {
+    "Type of place": [
+      "An entire place."
+    ],
+    "Property category": [
+      "Chefs kitchens",
+      "OMG!",
+      "Iconic cities",
+      "Historical homes",
+      "Mansions"
+    ],
+    "Basic amenities": [
+      "Air conditioning",
+      "Dryer",
+      "Essentials",
+      "Heating",
+      "Hot water",
+      "Kitchen",
+      "TV",
+      "Washer",
+      "Wifi"
+    ],
+    "Bathroom amenities": [
+      "Bathtub",
+      "Bidet",
+      "Body soap",
+      "Cleaning products",
+      "Hair conditioner",
+      "Hair dryer",
+      "Hot water",
+      "Outdoor shower",
+      "Shampoo",
+      "Shower gel"
+    ],
+    "Bedroom and laundry amenities": [
+      "Bed linens",
+      "Room-darkening shades",
+      "Safe",
+      "Clothing storage",
+      "Dryer",
+      "Washer",
+      "Drying rack for clothing",
+      "Essentials",
+      "Extra pillows and blankets",
+      "Hangers",
+      "Iron",
+      "Mosquito net"
+    ],
+    "Entertainment amenities": [
+      "Bowling alley",
+      "Books and reading material",
+      "Exercise equipment",
+      "Pool table",
+      "Piano",
+      "Movie theater",
+      "TV",
+      "Ethernet connection",
+      "Sound system"
+    ],
+    "Family amenities": [
+      "Childrens books and toys",
+      "Childrens playroom",
+      "Changing table",
+      "High chair",
+      "Childrens dinnerware",
+      "Baby bath",
+      "Outdoor playground",
+      "Window guards",
+      "Babysitter recommendations",
+      "Childrens bikes"
+    ],
+    "Heating and cooling amenities": [
+      "Air conditioning",
+      "Ceiling fan",
+      "Heating",
+      "Indoor fireplace",
+      "Portable fans"
+    ],
+    "Safety amenities": [
+      "Carbon monoxide alarm",
+      "Fire extinguisher",
+      "First aid kit",
+      "Smoke alarm"
+    ],
+    "Office amenities": [
+      "Dedicated workspace",
+      "Wifi"
+    ],
+    "Kitchen amenities": [
+      "Baking sheet",
+      "Dishwasher",
+      "Rice Maker",
+      "Stove",
+      "Freezer",
+      "Barbecue utensils",
+      "Blender",
+      "Hot water kettle",
+      "Toaster",
+      "Trash compactor",
+      "Kitchen",
+      "Bread maker",
+      "Coffee",
+      "Kitchenette",
+      "Wine glasses",
+      "Microwave",
+      "Coffee maker",
+      "Cooking basics",
+      "Mini fridge",
+      "Oven",
+      "Dining table",
+      "Dishes and silverware",
+      "Refrigerator"
+    ],
+    "Location amenities": [
+      "Laundromat nearby",
+      "Private entrance",
+      "Resort access"
+    ],
+    "Outdoor amenities": [
+      "Outdoor dining area",
+      "Patio or balcony",
+      "Outdoor furniture",
+      "Backyard",
+      "Bikes",
+      "Fire pit"
+    ],
+    "Parking and facilities": [
+      "Elevator",
+      "Free parking on premises",
+      "Gym",
+      "Pool"
+    ],
+    "Services": [
+      "Breakfast",
+      "Cleaning available during stay",
+      "Long term stays allowed"
+    ]
+  },
+  "propertyType": "",
+  "propertyCategories": [],
+  "address": "1600 Pennsylvania Avenue Northwest, Washington, D.C. 20500, USA",
+  "counters": {
+    "guests": 32,
+    "bedrooms": 16,
+    "beds": 24,
+    "bathrooms": 35
+  },
+  "createdAt": "2025-03-08T18:38:15.813Z",
+  "updatedAt": "2025-03-08T19:14:28.446Z"
+}
